@@ -1,1 +1,33 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Voting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="uploadContainer">
+        <h1>Upload Images for Voting</h1>
+        <input type="file" id="imageUpload" accept="image/*" multiple>
+        <button id="startVoting">Start Voting</button>
+    </div>
+    <div id="container" style="display:none;">
+        <h1>Vote for Your Favorite Image</h1>
+        <div id="images">
+            <img id="leftImage" class="image" src="" alt="Left Image">
+            <img id="rightImage" class="image" src="" alt="Right Image">
+        </div>
+        <div id="buttons">
+            <button id="voteLeft">Vote Left</button>
+            <button id="voteRight">Vote Right</button>
+        </div>
+    </div>
+    <div id="results" style="display:none;">
+        <h2>Results</h2>
+        <div id="resultImages"></div>
+        <button id="restart">Restart Voting</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
